@@ -1,0 +1,20 @@
+define void print_with_base_func(base, num)
+{
+	# Sets output base.
+	obase=base;
+	# Prints number with given base.
+	print num;
+}
+
+for (i = 1; i != 10; ++i)
+{
+	# Print origin number with base 10.
+	print_with_base_func(10, i);
+	print "-->";
+
+	# Print number with base 2.
+	print_with_base_func(2, i);
+	print "\n";
+}
+
+quit;
